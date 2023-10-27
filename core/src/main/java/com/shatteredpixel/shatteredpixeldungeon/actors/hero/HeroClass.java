@@ -55,6 +55,8 @@ import com.shatteredpixel.shatteredpixeldungeon.items.potions.PotionOfInvisibili
 import com.shatteredpixel.shatteredpixeldungeon.items.potions.PotionOfLiquidFlame;
 import com.shatteredpixel.shatteredpixeldungeon.items.potions.PotionOfMindVision;
 import com.shatteredpixel.shatteredpixeldungeon.items.potions.PotionOfStrength;
+import com.shatteredpixel.shatteredpixeldungeon.items.rings.RingOfSharpshooting;
+import com.shatteredpixel.shatteredpixeldungeon.items.rings.RingOfWealth;
 import com.shatteredpixel.shatteredpixeldungeon.items.scrolls.ScrollOfIdentify;
 import com.shatteredpixel.shatteredpixeldungeon.items.scrolls.ScrollOfLullaby;
 import com.shatteredpixel.shatteredpixeldungeon.items.scrolls.ScrollOfMagicMapping;
@@ -168,6 +170,9 @@ public enum HeroClass {
 
 		new PotionOfHealing().identify();
 		new ScrollOfRage().identify();
+
+		// new ScrollOfUpgrade().identify().quantity(100).collect();
+		new RingOfWealth().identify().upgrade(18).collect();
 	}
 
 	private static void initMage( Hero hero ) {
@@ -182,6 +187,9 @@ public enum HeroClass {
 
 		new ScrollOfUpgrade().identify();
 		new PotionOfLiquidFlame().identify();
+
+		// new ScrollOfUpgrade().identify().quantity(100).collect();
+		new RingOfWealth().identify().upgrade(18).collect();
 	}
 
 	private static void initRogue( Hero hero ) {
@@ -199,6 +207,9 @@ public enum HeroClass {
 
 		new ScrollOfMagicMapping().identify();
 		new PotionOfInvisibility().identify();
+
+		// new ScrollOfUpgrade().identify().quantity(100).collect();
+		new RingOfWealth().identify().upgrade(18).collect();
 	}
 
 	private static void initHuntress( Hero hero ) {
@@ -211,6 +222,10 @@ public enum HeroClass {
 
 		new PotionOfMindVision().identify();
 		new ScrollOfLullaby().identify();
+
+		// new ScrollOfUpgrade().identify().quantity(100).collect();
+		new RingOfWealth().identify().upgrade(18).collect();
+		new RingOfSharpshooting().identify().collect();
 	}
 
 	private static void initDuelist( Hero hero ) {
@@ -226,6 +241,8 @@ public enum HeroClass {
 
 		new PotionOfStrength().identify();
 		new ScrollOfMirrorImage().identify();
+
+		new RingOfWealth().identify().upgrade(18).collect();
 	}
 
 	public String title() {
